@@ -13,7 +13,7 @@ router.post("/", authenticate, ctrl.add);
 
 router.delete("/:id", authenticate, isValidId, ctrl.deleteById);
 
-router.put("/:id", authenticate, isValidId, ctrl.update);
+router.put("/:id", authenticate, isValidId, ctrl.updateById);
 
 router.patch("/:id", authenticate, isValidId, ctrl.updateStatus);
 
